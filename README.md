@@ -35,5 +35,3 @@ A simple **Streamlit-based interface** allows users to upload MRI images and get
 - Streamlit  
 
 ---
-
-## 📂 Project Structure
