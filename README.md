@@ -1,94 +1,57 @@
-<div align="center">
+# 🧠 Brain Tumour Detection System (YOLOv8)
 
-# 🧠 Brain Tumour Detection System  
-### Using YOLOv8 & Deep Learning
-
-A **deep learning-based medical imaging project** that detects brain tumours from MRI scans using a **custom-trained YOLOv8 model**.  
-Includes an interactive **Streamlit web application** for real-time tumour detection.
-
-</div>
+A deep learning-based medical imaging project that detects **brain tumours from MRI scans** using a **custom-trained YOLOv8 model**.  
+Includes an interactive **Streamlit web app** for real-time image upload and tumour detection.
 
 ---
 
-## 🚀 Project Overview
+## 📌 Project Overview
 
-This project leverages **YOLOv8**, a state-of-the-art object detection model, trained on **MRI brain scan datasets** to accurately identify tumour regions.
+Brain tumour detection is an important healthcare application where early diagnosis can improve treatment planning and patient outcomes.  
+This project uses **YOLOv8 (You Only Look Once)** for object detection to identify tumour regions in MRI images and visualize predictions using bounding boxes.
 
-### 🔍 The model provides:
-- 📦 **Bounding boxes** around tumour regions  
-- 🎯 **Confidence scores** for predictions  
-- 🧠 **Visual overlays** highlighting detected tumours  
-
-A lightweight **Streamlit interface** enables users to upload MRI images and instantly view detection results.
+✅ Detects tumour presence from MRI images  
+✅ Highlights tumour region using bounding boxes  
+✅ Streamlit-based web interface for easy testing  
+✅ Custom-trained `.pt` model included in the repository
 
 ---
 
-## ✨ Key Features
+## 🚀 Features
 
-✅ MRI brain tumour detection from images  
-⚡ Real-time inference using **YOLOv8**  
-🖥️ Interactive **Streamlit web app** (`newapp.py`)  
-🎯 Custom-trained YOLOv8 model (`best.pt`)  
-📁 Dataset preprocessing & prediction scripts  
-💾 Sample MRI images included in `pics/`  
+- 📷 Upload MRI scans and get tumour detection results instantly  
+- 🎯 YOLOv8-based object detection (fast + accurate)  
+- 🧠 Deep learning model trained on brain MRI tumour dataset  
+- 📦 Easy to run locally with Python + Streamlit  
+- 🖼️ Output image preview with predicted tumour region
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category | Tools |
-|--------|------|
-| **Language** | Python |
-| **Model** | YOLOv8 (Ultralytics) |
-| **Computer Vision** | OpenCV |
-| **Numerical Computing** | NumPy |
-| **Web App** | Streamlit |
+- **Python**
+- **YOLOv8 (Ultralytics)**
+- **OpenCV**
+- **NumPy**
+- **Streamlit**
+- **Matplotlib (optional for visualization)**
 
 ---
 
-## 🧪 How It Works
+## 📂 Repository Structure
 
-1️⃣ MRI images are uploaded via the Streamlit interface  
-2️⃣ The YOLOv8 model processes the image  
-3️⃣ Tumour regions are detected and localized  
-4️⃣ Results are displayed with bounding boxes and confidence scores  
+```bash
+Brain-Tumour-Detection-System/
+│
+├── README.md               # Project documentation
+├── brain.py                # Core code / inference logic
+├── newapp.py               # Streamlit app file
+├── Tumour.ipynb            # Notebook (training/testing experiments)
+├── best.pt                 # Custom trained YOLOv8 weights
+├── yolov8s.pt              # Base YOLOv8 weights (if included)
+├── result.jpg              # Sample output image
+├── pics.docx               # Supporting images/screenshots (optional)
+└── .DS_Store               # System file (can be ignored)
 
----
 
-## 📸 Sample Outputs
-
-> 📌 _Add screenshots or GIFs of tumour detection results here for better visualization._
-
----
-
-## 🚧 Future Improvements
-
-🔬 Improve detection accuracy with larger datasets  
-🧠 Multi-class tumour classification  
-⚡ Model optimization for faster inference  
-🌐 Cloud deployment (AWS / GCP / Azure)  
-📱 Mobile-friendly inference interface  
-
----
-
-## 👤 Author
-
-**Tom Jimmy**  
-📍 Bangalore  
-📧 **mundackaltom@gmail.com**  
-🔗 **GitHub:** https://github.com/mundackaltom  
-
----
-
-<div align="center">
-
-⭐ _If you find this project useful, consider giving it a star!_
-
-</div>
-
----
-
-## 📄 License
-
-This project is intended for **educational and research purposes only**.
 
