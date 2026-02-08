@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['glioma', 'meningioma', 'pituitary']
+
+roboflow:
+  workspace: brain-tumour-detection-system-1nby0
+  project: brain-mri-image-ntg51-bf6ml
+  version: 1
+  license: CC BY 4.0
+  url: https://app.roboflow.com/brain-tumour-detection-system-1nby0/brain-mri-image-ntg51-bf6ml/1
